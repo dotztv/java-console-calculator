@@ -4,13 +4,12 @@ public class calculate {
 
         // intro
         System.out.println("Console Calculator by dotzSimplicity - Java Edition.");
-        System.out.println("Note: This calculator only produces whole numbers, For decimals please use the Python version.");
         System.out.println("Possible Operators: +, -, *, /, %");
 
         // num1
         System.out.println("Enter your first number: ");
         Scanner scanner = new Scanner(System.in);
-        int num1 = scanner.nextInt();
+        float num1 = scanner.nextFloat();
         scanner.nextLine();
 
         
@@ -21,7 +20,7 @@ public class calculate {
 
         // num2
         System.out.println("Enter your second number: ");
-        int num2 = scanner.nextInt();
+        float num2 = scanner.nextFloat();
 
         scanner.close();
 
