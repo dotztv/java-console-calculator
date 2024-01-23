@@ -1,9 +1,8 @@
 import java.util.Scanner;
-public class calculate {
+public class calculate { //i'll admit, it's not the best.
     public static void main(String[] args) {
 
         // intro
-        System.out.println("Console Calculator by dotzSimplicity - Java Edition.");
         System.out.println("Possible Operators: +, -, *, /, %");
 
         // num1
@@ -24,21 +23,27 @@ public class calculate {
 
         scanner.close();
 
-        // calculation
-        if (operator.equals("+")) {
+        //le calculation
+        switch(operator){
+            case "+":
             System.out.println(num1 + num2);
-        } else if (operator.equals("-") ) {
+            break;
+            case "-":
             System.out.println(num1 - num2);
-        } else if (operator.equals("*")) {
+            break;
+            case "*":
             System.out.println(num1 * num2);
-        } else if (operator.equals("/")) {
+            break;
+            case "/":
             System.out.println(num1 / num2);
-        } else if (operator.equals("%")) {
+            break;
+            case "%":
             System.out.println(num1 % num2);
-        } else {
-            System.out.println("Invalid Operator, please try again.");
-            System.exit(0);
+            break;
+            default:
+            System.out.println("Invalid Operator");
+            break;
         }
-
+        System.exit(0);
     };
 }
